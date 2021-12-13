@@ -1,6 +1,6 @@
 # Web3 MetaMask Wallet Authentication 
 
-This is a quick and dirty tool built in [Next.js](https://nextjs.org/) that connects with MetaMask and reads your ETH wallet balance. 
+This is a quick and dirty tool built in [Next.js](https://nextjs.org/) that connects with MetaMask and reads your ETH wallet balance. Please install [metamask](https://metamask.io) to use this tool. 
 
 # Installation and Usage
 
