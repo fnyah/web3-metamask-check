@@ -51,21 +51,19 @@ export default function Home() {
   const checkLogin = async () => {
     const connectBtn = document.getElementById('connect-metamask')
     const balanceBtn = document.getElementById('check-balance')
-      web3 = new Web3(window.ethereum)
-      web3.eth.getAccounts(function (err, accounts) {
-        if (accounts.length > 0) {
-          console.log("User is logged in to MetaMask");
-          connectBtn.style.display = "none";
-          balanceBtn.style.display = "block"
-          setLogin(true)
-          checkBalance()
-        } else {
-          console.log("User is not logged in to MetaMask");
-          connectBtn.style.display = "block"
-        }
-      });
-   
-
+    web3 = new Web3(window.ethereum)
+    web3.eth.getAccounts(function (err, accounts) {
+      if (accounts.length > 0) {
+        console.log("User is logged in to MetaMask");
+        connectBtn.style.display = "none";
+        balanceBtn.style.display = "block"
+        setLogin(true)
+        checkBalance()
+      } else {
+        console.log("User is not logged in to MetaMask");
+        connectBtn.style.display = "block"
+      }
+    });
   }
 
   checkLogin()
